@@ -1,5 +1,5 @@
 
-.IoT device connectivity
+.IoT Device Connectivity
 [width="100%",cols="16%,11%,73%",options="header",]
 |===
 |Parameter label (name) |Default value|Description|Email address

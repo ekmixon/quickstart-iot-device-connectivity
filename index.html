@@ -1199,6 +1199,25 @@ Certain Regions are available on an opt-in basis. For more information, see <a h
 </div>
 </div>
 <div class="sect3">
+<h4 id="_github_fork_and_access_token">GitHub fork and access token</h4>
+<div class="paragraph">
+<p>This QuickStart deploys a CICD Pipeline using AWS Code Pipeline from source code hosted on GitHub. As AWS CodePipeline requires private access to GitHub Repositories, you must have a GitHub account and have completed the following steps:</p>
+</div>
+<div class="ulist">
+<ul>
+<li>
+<p>Log in to GitHub and fork the <a href="https://github.com/aws-quickstart/quickstart-iot-device-connectivity" target="_blank" rel="noopener">quickstart-iot-device-connectivity</a> repository.</p>
+</li>
+<li>
+<p>Create a <a href="https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token" target="_blank" rel="noopener">personal access token</a> for your GitHub Account.</p>
+</li>
+<li>
+<p>Save the token and user name for use in the deployment parameters.</p>
+</li>
+</ul>
+</div>
+</div>
+<div class="sect3">
 <h4 id="_deployment_options">Deployment options</h4>
 <div class="paragraph">
 <p>This Quick Start deploys a continuous delivery and/or continuous deployment (CICD) pipeline using AWS CodePipeline.</p>
@@ -1721,13 +1740,13 @@ Region</code>, and <code>Quick Start S3 key prefix</code>. Changing these parame
 <td class="tableblock halign-left valign-top"><p class="tableblock">(Optional) Email address for the administrator. This is also used for the AWS IoT SiteWise portal creation.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QuickSight username
+<td class="tableblock halign-left valign-top"><p class="tableblock">QuickSight user name
 (<code>quickSightAdminUserName</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">(Optional) User name of an Amazon QuickSight user with an administrator role. If left blank, the QuickSight dashboard will not be included.</p></td>
 </tr>
 <tr>
-<td class="tableblock halign-left valign-top"><p class="tableblock">QuickSight user region
+<td class="tableblock halign-left valign-top"><p class="tableblock">QuickSight user Region
 (<code>quickSightAdminUserRegion</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">The Region of the above QuickSight user (for example, us-east-1).</p></td>
@@ -1749,6 +1768,18 @@ Region</code>, and <code>Quick Start S3 key prefix</code>. Changing these parame
 (<code>environment</code>)</p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock"><code>int</code></p></td>
 <td class="tableblock halign-left valign-top"><p class="tableblock">Your environment name. Change to a unique name only if deploying the stack multiple times in the same Region and account.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GitHub user name
+(<code>gitHubUserName</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GitHub user name.</p></td>
+</tr>
+<tr>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GitHub token
+(<code>githubtoken</code>)</p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock"><code><strong><em>Requires input</em></strong></code></p></td>
+<td class="tableblock halign-left valign-top"><p class="tableblock">GitHub personal access token allowing access to the forked repository.</p></td>
 </tr>
 </tbody>
 </table>
@@ -1803,7 +1834,7 @@ and to share your customizations with others.</p>
 </html>
 <!--
 repo commit:
-7666b894aecfbc5c3c4509d98d55c2671ea925dc
+0d3e62a77c35c65a7b3a3caa211e24c6399a9ddd
 
 submodule config:
 +bdfd9dc86ef0fe11867476f32a0ed4e8a41b1158 docs/boilerplate (heads/main)

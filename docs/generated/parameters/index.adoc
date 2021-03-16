@@ -1,1 +1,3 @@
-// placeholder
+
+=== Launch Deployment Pipeline
+include::iot-onboarding-int.template.adoc[]

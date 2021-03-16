@@ -1,0 +1,12 @@
+
+.IoT device connectivity
+[width="100%",cols="16%,11%,73%",options="header",]
+|===
+|Parameter label (name) |Default value|Description|Email address
+(`contactEmail`)|`**__Requires input__**`|(Optional) Email address for the administrator. This is also used for the AWS IoT SiteWise portal creation.|QuickSight username
+(`quickSightAdminUserName`)|`**__Requires input__**`|(Optional) User name of an Amazon QuickSight user with an administrator role. If left blank, the QuickSight dashboard will not be included.|QuickSight user region
+(`quickSightAdminUserRegion`)|`**__Requires input__**`|The Region of the above QuickSight user (for example, us-east-1).|QuickSight dashboard ARN
+(`sourceTemplateArn`)|`**__Requires input__**`|(Optional) Amazon Resource Name (ARN) of a public QuickSight dashboard. If using Rigado Allegro Kit, use ‘arn:aws:quicksight:eu-central-1:660526416360:template/iotOnboardingRigadoQuicksightPublicTemplatedev’ for an example dashboard.|MQTT topic
+(`rootMqttTopic`)|`data/#`|The root MQTT topic to which devices publish data. Leave the default (data/#) if using the Rigado Allegro Kit. If using your own devices, create your own dataset, analysis, and dashboard based on your devices.|Environment name
+(`environment`)|`int`|Your environment name. Change to a unique name only if deploying the stack multiple times in the same Region and account.
+|===

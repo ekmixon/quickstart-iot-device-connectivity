@@ -19,8 +19,8 @@ This Quick Start uses the email address that you provide in the AWS CloudFormati
 Enabling logging for AWS IoT Core helps you troubleshoot device connectivity. Troubleshooting is especially useful if you are not using a Rigado device. For more information, see https://docs.aws.amazon.com/iot/latest/developerguide/configure-logging.html[Configure AWS IoT logging].
 
 ==== GitHub fork and access token
-This QuickStart deploys a CICD Pipeline using AWS Code Pipeline from source code hosted on GitHub. As AWS CodePipeline requires private access to GitHub Repositories, you must have a GitHub account and have completed the following steps:
+This Quick Start deploys a CICD pipeline using AWS CodePipeline from source code hosted on GitHub. As AWS CodePipeline requires private access to GitHub repositories, you must have a GitHub account and have completed the following steps:
 
 * Log in to GitHub and fork the https://github.com/aws-quickstart/quickstart-iot-device-connectivity[quickstart-iot-device-connectivity^] repository.
-* Create a https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token[personal access token^] for your GitHub Account.
+* Create a https://docs.github.com/en/github/authenticating-to-github/creating-a-personal-access-token[personal access token^] for your GitHub account.
 * Save the token and user name for use in the deployment parameters.

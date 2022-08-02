@@ -54,7 +54,7 @@ toRename=[]
 for col in columns:
     lowerCol = col.lower()
     #print(lowerCol)
-    if not lowerCol in existing:
+    if lowerCol not in existing:
         existing[lowerCol] = 1
     else:
         toRename.append(col)
